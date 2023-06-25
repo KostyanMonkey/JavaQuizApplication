@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ignatdemon.HelpController">
+   <children>
+      <Text layoutX="242.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пмргите">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="220.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sad.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="HelpText" layoutX="289.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="логин" textAlignment="CENTER" />
+      <TextField fx:id="Textt" layoutX="237.0" layoutY="320.0" />
+      <Button fx:id="Button" layoutX="279.0" layoutY="432.0" mnemonicParsing="false" onAction="#click" text="Ввести" />
+      <TextField fx:id="Answer" layoutX="238.0" layoutY="396.0" visible="false" />
+      <Text fx:id="QuestionText" layoutX="294.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+      <Button fx:id="LastChance" layoutX="280.0" layoutY="458.0" mnemonicParsing="false" onAction="#Last" text="Ввести" visible="false" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ignatdemon.ThemeTestController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="100.0" style="-fx-background-color: #a0a0a0;">
+         <children>
+            <Button layoutX="24.0" layoutY="184.0" mnemonicParsing="false" onAction="#switchToUserScene" prefHeight="52.0" prefWidth="52.0" text="юзер" />
+            <Button fx:id="TestStart" layoutX="24.0" layoutY="257.0" mnemonicParsing="false" onAction="#switchToTestScene" prefHeight="52.0" prefWidth="52.0" text="тест" />
+            <Button layoutX="24.0" layoutY="327.0" mnemonicParsing="false" onAction="#switchToThemeTest" prefHeight="52.0" prefWidth="52.0" text="Темы" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="150.0" fitWidth="900.0" layoutX="100.0" pickOnBounds="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <Text fx:id="QuestionText" layoutX="105.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="текст вопроса" textAlignment="CENTER" wrappingWidth="890.1366577148438">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="FirstAnswer" layoutX="156.0" layoutY="269.0" mnemonicParsing="false" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="answers" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="FourthAnswer" layoutX="156.0" layoutY="441.0" mnemonicParsing="false" text="Вариант ответа 4" toggleGroup="$answers" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="SecondAnswer" layoutX="156.0" layoutY="327.0" mnemonicParsing="false" text="Вариант ответа 2" toggleGroup="$answers" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ThirdAnswer" layoutX="156.0" layoutY="384.0" mnemonicParsing="false" text="Вариант ответа 3" toggleGroup="$answers" visible="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="ButtonAnswer" layoutX="431.0" layoutY="518.0" mnemonicParsing="false" onAction="#Test" prefHeight="26.0" prefWidth="222.0" text="Ответить" visible="false" />
+      <Button fx:id="Start1" layoutX="170.0" layoutY="269.0" mnemonicParsing="false" onAction="#StartFirst" prefHeight="74.0" prefWidth="242.0" style="-fx-background-color: #ff00ff;" text="Тест по теме 1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Start2" layoutX="600.0" layoutY="269.0" mnemonicParsing="false" onAction="#StartSecond" prefHeight="74.0" prefWidth="242.0" style="-fx-background-color: #ff00ff;" text="Тест по теме 2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Start3" layoutX="170.0" layoutY="362.0" mnemonicParsing="false" onAction="#StartThird" prefHeight="74.0" prefWidth="242.0" style="-fx-background-color: #ff00ff;" text="Тест по теме 3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Start4" layoutX="600.0" layoutY="357.0" mnemonicParsing="false" onAction="#StartFourth" prefHeight="74.0" prefWidth="242.0" style="-fx-background-color: #ff00ff;" text="Тест по теме 4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="Start5" layoutX="379.0" layoutY="471.0" mnemonicParsing="false" onAction="#StartFive" prefHeight="74.0" prefWidth="242.0" style="-fx-background-color: #ff00ff;" text="Тест по теме 5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
